@@ -29,7 +29,7 @@ export default ({ data }) => {
             >
             <h3
               className={css`
-                margin-bottom: 50px;
+                margin-bottom: 5px;
               `}
             >
               {node.frontmatter.title}{" "}
