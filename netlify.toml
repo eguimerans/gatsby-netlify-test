@@ -1,0 +1,13 @@
+# Our global, build settings
+[build]
+#   base    = "site"        # run the buold from this directory
+#   publish = "public/"      # the output diretory to push to the CDN after the build
+#   command = "gatsby build"  # the command to build our site
+   functions = "/functions"
+# Specific branch context: Deploys from this branch
+# will take these settings and override their
+# current ones.
+[context."feature/branch"]
+   command = "gulp build:my-feature"  # For this branch we'd prefer to build with this
+#[context.production]
+#  environment = { PMC = "PMC_from_netlify.to" }
