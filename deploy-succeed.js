@@ -1,6 +1,6 @@
 exports.handler = function(event, context, callback) {
 
-  console.log('-------------- init deploy-succeeded --------------------')
+  console.log('--> start deploy-succeeded')
 
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
@@ -40,6 +40,6 @@ exports.handler = function(event, context, callback) {
     statusCode: 200,
     body: "Hello, World"
   });
-*7
-  console.log('-------------- end deploy-succeeded --------------------')
+*/
+  console.log('--> end deploy-succeeded')
 }

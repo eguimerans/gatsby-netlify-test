@@ -1,7 +1,7 @@
 exports.handler = function(event, context, callback) {
 
 
-  console.log('-------------- init deploy-building --------------------');
+  console.log('--> start deploy-building')
 
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
@@ -100,6 +100,6 @@ exports.handler = function(event, context, callback) {
   });
 
 */
-  console.log('-------------- end deploy-building --------------------')
+  console.log('--> end deploy-building')
 
 }
