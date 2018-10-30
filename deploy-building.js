@@ -5,7 +5,8 @@ exports.handler = function(event, context, callback) {
 
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
-  console.log("Function  invoked -> ", data)
+  console.log("Function  invoked with data -> ", data)
+
 
 
   // STASH_USER
@@ -14,7 +15,7 @@ exports.handler = function(event, context, callback) {
   // STASH_PASSWORD
   var shash_password = process.env.STASH_PASSWORD
   console.log('STASH_PASSWORD: ' + shash_password)
-  //////////////
+/*  //////////////
   // REPOSITORY_URL
   var repoURL = process.env.REPOSITORY_URL
   console.log('REPOSITORY_URL: ' + repoURL)
@@ -23,7 +24,7 @@ exports.handler = function(event, context, callback) {
   console.log('BRANCH: ' + branch)
   // pullRequest
   var pullRequest = process.env.PULL_REQUEST
-/*  console.log('PULL_REQUEST: ' + pullRequest)
+  console.log('PULL_REQUEST: ' + pullRequest)
   // HEAD
   var head = process.env.HEAD
   console.log('HEAD: ' + head)

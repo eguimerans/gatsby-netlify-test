@@ -2,6 +2,10 @@ exports.handler = function(event, context, callback) {
 
   console.log('-------------- init deploy-succeeded --------------------')
 
+  /* parse the string body into a useable JS object */
+  const data = JSON.parse(event.body)
+  console.log("Function  invoked with data -> ", data)
+
   var eventStr = JSON.stringify(event);
   var contextStr = JSON.stringify(context);
 
