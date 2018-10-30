@@ -7,6 +7,8 @@ exports.handler = function(event, context, callback) {
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
   console.log(data)
+  console.log(Object.keys(data.payload));
+  console.log(Object.keys(data.site));
 
 console.log("commit (just in case) : " + data.commit_ref);
 console.log("branch (just in case) : " + data.branch);
