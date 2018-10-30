@@ -1,11 +1,11 @@
 exports.handler = function(event, context, callback) {
 
 
-  console.log('-------------- init deploy-building --------------------')
+  console.log('-------------- init deploy-building --------------------');
 
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
-  console.log("Function  invoked with data -> ", data)
+  console.log(data)
 
 
 
