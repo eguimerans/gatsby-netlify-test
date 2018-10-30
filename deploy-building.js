@@ -23,7 +23,7 @@ exports.handler = function(event, context, callback) {
   console.log('BRANCH: ' + branch)
   // pullRequest
   var pullRequest = process.env.PULL_REQUEST
-  console.log('PULL_REQUEST: ' + pullRequest)
+/*  console.log('PULL_REQUEST: ' + pullRequest)
   // HEAD
   var head = process.env.HEAD
   console.log('HEAD: ' + head)
