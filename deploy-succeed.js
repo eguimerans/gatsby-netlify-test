@@ -10,6 +10,7 @@ exports.handler = function(event, context, callback) {
 
   var request = require('request');
 
+/*
   request.post(
       'https://' + process.env.STASH_USER + ':' + process.env.STASH_PASSWORD + '@stash.devpv.com/rest/build-status/1.0/commits/3a799cbe29fdf1776d0f73a878e26d1fd6a6425e',
       { json: {
@@ -35,6 +36,6 @@ exports.handler = function(event, context, callback) {
     statusCode: 200,
     body: "Hello, World"
   });
-
+*7
   console.log('-------------- end deploy-succeeded --------------------')
 }
