@@ -10,8 +10,8 @@ exports.handler = function(event, context, callback) {
   console.log(Object.keys(data.payload));
   console.log(Object.keys(data.site));
 
-console.log("commit (just in case) : " + data.commit_ref);
-console.log("branch (just in case) : " + data.branch);
+console.log("commit (just in case) : " + data.payload.commit_ref);
+console.log("branch (just in case) : " + data.payload.branch);
 
 
 
