@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots - master`,
+    title: `Pandas Eating Lots - master 2`,
     pmc: process.env.PMC
   },
   plugins: [
