@@ -1,5 +1,11 @@
+import querystring from "querystring";
+
 exports.handler = function(event, context, callback) {
 
+  console.log('start new stuff')
+  const params = querystring.parse(event.body);
+  console.log(params)
+  console.log('end new stuff')
 
   console.log('--> start deploy-building')
   console.log("after start something...");
@@ -122,6 +128,9 @@ if (!commit) {
   });
 
 */
+
+
+
   console.log('--> end deploy-building')
 
 }
