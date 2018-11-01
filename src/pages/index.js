@@ -55,8 +55,8 @@ export default ({ data }) => {
         <h1>Contact</h1>
         <form
           name="contact"
-          method="post"
-          action="/about/"
+          method="POST"
+          /*action="/about/"*/
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
