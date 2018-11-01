@@ -70,8 +70,13 @@ export default ({ data }) => {
           </p>
           <p>
             <label>
-              Your name:<br />
-              <input type="text" name="name" />
+              Your name:<input type="text" name="name" />
+            </label>
+            <label>
+              Your phone:<input type="phone" name="phone" />
+            </label>
+            <label>
+              Your message:<input type="text" name="message" />
             </label>
           </p>
           <p>
