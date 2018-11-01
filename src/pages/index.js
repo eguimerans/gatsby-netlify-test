@@ -46,6 +46,23 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
+      <div>
+        <h3>Testin form</h3>
+        <form name="sms" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Phone: <input type="phone" name="phone" /></label>
+            </p>
+          <p>
+            <label>Your message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
     </Layout>
   )
 }
