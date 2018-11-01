@@ -10,7 +10,7 @@ export default ( {data} ) => (
       photos and videos of pandas eating lots of food.
     </p>
     <h3>Testin form</h3>
-    <form action="./about" name="sms" method="POST" netlify>
+    <form action="/about" name="sms" method="POST" netlify>
     <p>
       <label>Your Name: <input type="text" name="name" /></label>
     </p>
