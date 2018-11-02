@@ -20,25 +20,27 @@ exports.handler = function(event, context, callback) {
 
   var request = require('request');
 
-  request({
-    headers: {
-      'Content-Length': contentLength,
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    uri: 'https://' + process.env.TWILIO_SID + ':' + process.env.TWILIO_TOKEN + '@api.twilio.com/2010-04-01/Accounts/' + process.env.TWILIO_SID + '/Messages.json',
-    body: formData,
-    method: 'POST'
-  }, function (error, response, body) {
-    if (!error && response.statusCode >= 200 && response.statusCode < 300) {
-        console.log("sms looks good")
-        console.log('body: ' + JSON.stringify(body))
-        console.log('response: ' + JSON.stringify(response))
-    } else {
-        console.log('error: ' + JSON.stringify(error))
-        console.log('response error: ' + JSON.stringify(response))
-        console.log('body error: ' + JSON.stringify(body))
-    }
-  });
+  if (false) {
+    request({
+      headers: {
+        'Content-Length': contentLength,
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      uri: 'https://' + process.env.TWILIO_SID + ':' + process.env.TWILIO_TOKEN + '@api.twilio.com/2010-04-01/Accounts/' + process.env.TWILIO_SID + '/Messages.json',
+      body: formData,
+      method: 'POST'
+    }, function (error, response, body) {
+      if (!error && response.statusCode >= 200 && response.statusCode < 300) {
+          console.log("sms looks good")
+          console.log('body: ' + JSON.stringify(body))
+          console.log('response: ' + JSON.stringify(response))
+      } else {
+          console.log('error: ' + JSON.stringify(error))
+          console.log('response error: ' + JSON.stringify(response))
+          console.log('body error: ' + JSON.stringify(body))
+      }
+    });
+  }
 
   callback(null, {
     statusCode: 200,
